@@ -7,7 +7,7 @@ Predicting attrition is crucial for organizations as it allows them to proactive
 
 ## Dataset description
 The dataset used is IBM HR Analytics Employee Attrition & Performance dataset from 
-'https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset'
+https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset
 
 ## EDA Summary
 Upon exploratory analysis several attributes ('employeecount', 'standardhours', 'department', 'relationshipsatisfaction', 'education', 'gender', 'performancerating','over18') were removed from training the model as they could barely explain the target vatiable as measures by correlation and mutual information. Exploratory analysis revealed no outliers.
@@ -21,6 +21,12 @@ The following models were used to train the model with the ROC_AUC scores on the
 | -----------------------| -----------|
 | LogisticRegression     | 0.71       |
 | DecisionTreeClassifier | 0.67       |
-| RandomForestClassifier | 0.82      |
+| RandomForestClassifier | 0.82       |
 
 The hyperparameters in the models were tuned to achieve the highest ROC_AUC score. As a result Random Forest with max depth of 10 and min samples leaf of 1 is chosen to train the final model.
+
+## How to run the model
+
+To run the model locally, execute the following code in the terminal:
+
+'''uv run python predict.py'''
