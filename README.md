@@ -29,11 +29,14 @@ The hyperparameters in the models were tuned to achieve the highest ROC_AUC scor
 
 To run the model locally, execute the following code in the terminal:
 
-```uv run python predict.py```
+```
+uv run python predict.py
+```
 
 You can then test the Webservice either by going to http://localhost:9696/docs or executing the following curl command:
 
-``curl -X 'POST' \
+```
+curl -X 'POST' \
   'http://localhost:9696/predict' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
@@ -64,12 +67,15 @@ You can then test the Webservice either by going to http://localhost:9696/docs o
   "yearsincurrentrole": 2,
   "yearssincelastpromotion": 5,
   "yearswithcurrmanager": 3
-}'``
+}'
+```
 
 To run the app via Docker, execute:
 
-``docker build -t attrition-prediction .
-docker run -it --rm -p 9696:9696 attrition-prediction``
+```
+docker build -t attrition-prediction .
+docker run -it --rm -p 9696:9696 attrition-prediction
+```
 
 And similarly test the Webservice either by going to http://localhost:9696/docs or executing the following curl command:
 
