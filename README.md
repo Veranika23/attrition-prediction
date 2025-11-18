@@ -29,4 +29,4 @@ The hyperparameters in the models were tuned to achieve the highest ROC_AUC scor
 
 To run the model locally, execute the following code in the terminal:
 
-`uv run python predict.py`
+```uv run python predict.py```
