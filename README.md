@@ -73,7 +73,7 @@ docker run -it --rm -p 9696:9696 attrition-prediction``
 
 And similarly test the Webservice either by going to http://localhost:9696/docs or executing the following curl command:
 
-``curl -X 'POST' \
+```curl -X 'POST' \
   'http://localhost:9696/predict' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
@@ -102,7 +102,7 @@ And similarly test the Webservice either by going to http://localhost:9696/docs 
     "yearsatcompany": 5,
     "yearsincurrentrole": 2,
     "yearssincelastpromotion": 5,
-    "yearswithcurrmanager": 3}'``
+    "yearswithcurrmanager": 3}'```
 
 
 ## Next steps
